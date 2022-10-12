@@ -10,7 +10,7 @@ import {
 } from "@heroicons/react/24/outline";
 import signOut from "next-auth/react";
 
-// 1:37:40
+// 1:37:41
 
 function Sidebar() {
   return (
