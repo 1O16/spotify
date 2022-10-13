@@ -8,11 +8,10 @@ import {
   RssIcon,
   UserCircleIcon,
 } from "@heroicons/react/24/outline";
-import signOut from "next-auth/react";
-
-// 1:37:41
+import { signOut, useSession } from "next-auth/react";
 
 function Sidebar() {
+  const { data: session, status } = useSession();
   return (
     <div className="text-gray-500 p-5 text-sm border-r border-gray-900">
       <div className="space-y-4">
