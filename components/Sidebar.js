@@ -1,12 +1,11 @@
 import React from "react";
 import {
+  UserCircleIcon,
   HomeIcon,
   MagnifyingGlassIcon,
   ViewColumnsIcon,
   PlusCircleIcon,
   HeartIcon,
-  RssIcon,
-  UserCircleIcon,
 } from "@heroicons/react/24/outline";
 import { signOut, useSession } from "next-auth/react";
 
@@ -15,7 +14,7 @@ function Sidebar() {
   console.log(session);
 
   return (
-    <div className="text-gray-500 p-5 text-sm border-r border-gray-900">
+    <div className="text-gray-500 bg-black p-5 text-sm border-r border-gray-900 overflow-y-scroll scrollbar-hide h-screen">
       <div className="space-y-4">
         <button
           className="flex items-center space-x-2 hover:text-white"
@@ -45,10 +44,6 @@ function Sidebar() {
         <button className="flex items-center space-x-2 hover:text-white">
           <HeartIcon className="h-5 w-5" />
           <p>Liked Songs</p>
-        </button>
-        <button className="flex items-center space-x-2 hover:text-white">
-          <RssIcon className="h-5 w-5" />
-          <p>Your Episodes</p>
         </button>
         <hr className="border-t-[0.1px] border-gray-900" />
 
