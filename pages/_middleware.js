@@ -19,5 +19,3 @@ export async function middleware(req) {
     return NextResponse.redirect(origin + "/login");
   }
 }
-
-// 1:50:00
