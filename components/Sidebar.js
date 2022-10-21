@@ -5,8 +5,8 @@ import {
   MagnifyingGlassIcon,
   ViewColumnsIcon,
   PlusCircleIcon,
-  HeartIcon,
 } from "@heroicons/react/24/outline";
+import { HeartIcon, BookmarkIcon } from "@heroicons/react/24/solid";
 import { signOut, useSession } from "next-auth/react";
 
 function Sidebar() {
@@ -25,25 +25,29 @@ function Sidebar() {
         </button>
         <button className="flex items-center space-x-2 hover:text-white">
           <HomeIcon className="h-5 w-5" />
-          <p>Home</p>
+          <p>홈</p>
         </button>
         <button className="flex items-center space-x-2 hover:text-white">
           <MagnifyingGlassIcon className="h-5 w-5" />
-          <p>Search</p>
+          <p>검색하기</p>
         </button>
         <button className="flex items-center space-x-2 hover:text-white">
           <ViewColumnsIcon className="h-5 w-5" />
-          <p>Your Library</p>
+          <p>내 라이브러리</p>
         </button>
         <hr className="border-t-[0.1px] border-gray-900" />
 
         <button className="flex items-center space-x-2 hover:text-white">
           <PlusCircleIcon className="h-5 w-5" />
-          <p>Create Playlist</p>
+          <p>플레이리스트 만들기</p>
         </button>
         <button className="flex items-center space-x-2 hover:text-white">
-          <HeartIcon className="h-5 w-5" />
-          <p>Liked Songs</p>
+          <HeartIcon className="h-5 w-5 text-white bg-gradient-to-br to-slate-400 from-purple-500 rounded-sm hover:to-slate-300 hover:from-purple-400" />
+          <p>좋아요 표시한 곡</p>
+        </button>
+        <button className="flex items-center space-x-2 hover:text-white">
+          <BookmarkIcon className="h-5 w-5 text-green-600 bg-green-900 rounded-sm hover:bg-green-700 hover:text-green-500" />
+          <p>내 에피소드</p>
         </button>
         <hr className="border-t-[0.1px] border-gray-900" />
 
