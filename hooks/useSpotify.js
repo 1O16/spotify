@@ -2,11 +2,6 @@ import { useEffect } from "react";
 import { useSession, signIn } from "next-auth/react";
 import spotifyApi from "../lib/spotify";
 
-const spotifyApi = new SpotifyWebApi({
-  clientId: process.env.NEXT_PUBLIC_CLIENT_ID,
-  clientSecret: process.env.NEXT_PUBLIC_CLIENT_SECRET,
-});
-
 export default function useSpotify() {
   const { data: session, status } = useSession();
 

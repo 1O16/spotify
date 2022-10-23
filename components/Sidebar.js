@@ -1,4 +1,5 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import useSpotify from "../hooks/useSpotify";
 import {
   UserCircleIcon,
   HomeIcon,
@@ -10,8 +11,11 @@ import { HeartIcon, BookmarkIcon } from "@heroicons/react/24/solid";
 import { signOut, useSession } from "next-auth/react";
 
 function Sidebar() {
+  const spotifyApi = useSpotify();
   const { data: session, status } = useSession();
-  console.log(session);
+  const [playlists, setPlaylists] = useState([]);
+
+  useEffect(() => {}, [session, spotifyApi]);
 
   return (
     <div className="text-gray-500 bg-black p-5 text-sm border-r border-gray-900 overflow-y-scroll scrollbar-hide h-screen">
@@ -21,7 +25,7 @@ function Sidebar() {
           onClick={() => signOut()}
         >
           <UserCircleIcon className="h-5 w-5" />
-          <p>Logout</p>
+          <p>로그아웃</p>
         </button>
         <button className="flex items-center space-x-2 hover:text-white">
           <HomeIcon className="h-5 w-5" />
