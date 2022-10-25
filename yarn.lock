@@ -14,15 +14,15 @@
   "resolved" "https://registry.npmjs.org/@heroicons/react/-/react-2.0.12.tgz"
   "version" "2.0.12"
 
-"@next/env@12.1.5":
-  "integrity" "sha512-+34yUJslfJi7Lyx6ELuN8nWcOzi27izfYnZIC1Dqv7kmmfiBVxgzR3BXhlvEMTKC2IRJhXVs2FkMY+buQe3k7Q=="
-  "resolved" "https://registry.npmjs.org/@next/env/-/env-12.1.5.tgz"
-  "version" "12.1.5"
+"@next/env@12.1.6":
+  "integrity" "sha512-Te/OBDXFSodPU6jlXYPAXpmZr/AkG6DCATAxttQxqOWaq6eDFX25Db3dK0120GZrSZmv4QCe9KsZmJKDbWs4OA=="
+  "resolved" "https://registry.npmjs.org/@next/env/-/env-12.1.6.tgz"
+  "version" "12.1.6"
 
-"@next/swc-win32-x64-msvc@12.1.5":
-  "integrity" "sha512-/SoXW1Ntpmpw3AXAzfDRaQidnd8kbZ2oSni8u5z0yw6t4RwJvmdZy1eOaAADRThWKV+2oU90++LSnXJIwBRWYQ=="
-  "resolved" "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.1.5.tgz"
-  "version" "12.1.5"
+"@next/swc-win32-x64-msvc@12.1.6":
+  "integrity" "sha512-4ZEwiRuZEicXhXqmhw3+de8Z4EpOLQj/gp+D9fFWo6ii6W1kBkNNvvEx4A90ugppu+74pT1lIJnOuz3A9oQeJA=="
+  "resolved" "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-12.1.6.tgz"
+  "version" "12.1.6"
 
 "@nodelib/fs.scandir@2.1.5":
   "integrity" "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g=="
@@ -165,7 +165,7 @@
   "resolved" "https://registry.npmjs.org/camelcase-css/-/camelcase-css-2.0.1.tgz"
   "version" "2.0.1"
 
-"caniuse-lite@^1.0.30001283", "caniuse-lite@^1.0.30001400", "caniuse-lite@^1.0.30001407":
+"caniuse-lite@^1.0.30001332", "caniuse-lite@^1.0.30001400", "caniuse-lite@^1.0.30001407":
   "integrity" "sha512-06wzzdAkCPZO+Qm4e/eNghZBDfVNDsCgw33T27OwBH9unE9S478OYw//Q2L7Npf/zBzs7rjZOszIFQkwQKAEqA=="
   "resolved" "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001416.tgz"
   "version" "1.0.30001416"
@@ -345,6 +345,11 @@
   dependencies:
     "is-glob" "^4.0.3"
 
+"hamt_plus@1.0.2":
+  "integrity" "sha512-t2JXKaehnMb9paaYA7J0BX8QQAY8lwfQ9Gjf4pg/mk4krt+cmwmU652HOoWonf+7+EQV97ARPMhhVgU1ra2GhA=="
+  "resolved" "https://registry.npmjs.org/hamt_plus/-/hamt_plus-1.0.2.tgz"
+  "version" "1.0.2"
+
 "has-symbols@^1.0.3":
   "integrity" "sha512-l3LCuF6MgDNwTDKkdYGEihYjt5pRPbEg46rtlmnSPlUbgmB8LOIrKJbYYFBSbnPaJexMKtiPO8hmeRjRz2Td+A=="
   "resolved" "https://registry.npmjs.org/has-symbols/-/has-symbols-1.0.3.tgz"
@@ -492,28 +497,28 @@
     "preact-render-to-string" "^5.1.19"
     "uuid" "^8.3.2"
 
-"next@^12.1.5", "next@^12.2.5":
-  "integrity" "sha512-YGHDpyfgCfnT5GZObsKepmRnne7Kzp7nGrac07dikhutWQug7hHg85/+sPJ4ZW5Q2pDkb+n0FnmLkmd44htIJQ=="
-  "resolved" "https://registry.npmjs.org/next/-/next-12.1.5.tgz"
-  "version" "12.1.5"
+"next@^12.1.6", "next@^12.2.5":
+  "integrity" "sha512-cebwKxL3/DhNKfg9tPZDQmbRKjueqykHHbgaoG4VBRH3AHQJ2HO0dbKFiS1hPhe1/qgc2d/hFeadsbPicmLD+A=="
+  "resolved" "https://registry.npmjs.org/next/-/next-12.1.6.tgz"
+  "version" "12.1.6"
   dependencies:
-    "@next/env" "12.1.5"
-    "caniuse-lite" "^1.0.30001283"
+    "@next/env" "12.1.6"
+    "caniuse-lite" "^1.0.30001332"
     "postcss" "8.4.5"
-    "styled-jsx" "5.0.1"
+    "styled-jsx" "5.0.2"
   optionalDependencies:
-    "@next/swc-android-arm-eabi" "12.1.5"
-    "@next/swc-android-arm64" "12.1.5"
-    "@next/swc-darwin-arm64" "12.1.5"
-    "@next/swc-darwin-x64" "12.1.5"
-    "@next/swc-linux-arm-gnueabihf" "12.1.5"
-    "@next/swc-linux-arm64-gnu" "12.1.5"
-    "@next/swc-linux-arm64-musl" "12.1.5"
-    "@next/swc-linux-x64-gnu" "12.1.5"
-    "@next/swc-linux-x64-musl" "12.1.5"
-    "@next/swc-win32-arm64-msvc" "12.1.5"
-    "@next/swc-win32-ia32-msvc" "12.1.5"
-    "@next/swc-win32-x64-msvc" "12.1.5"
+    "@next/swc-android-arm-eabi" "12.1.6"
+    "@next/swc-android-arm64" "12.1.6"
+    "@next/swc-darwin-arm64" "12.1.6"
+    "@next/swc-darwin-x64" "12.1.6"
+    "@next/swc-linux-arm-gnueabihf" "12.1.6"
+    "@next/swc-linux-arm64-gnu" "12.1.6"
+    "@next/swc-linux-arm64-musl" "12.1.6"
+    "@next/swc-linux-x64-gnu" "12.1.6"
+    "@next/swc-linux-x64-musl" "12.1.6"
+    "@next/swc-win32-arm64-msvc" "12.1.6"
+    "@next/swc-win32-ia32-msvc" "12.1.6"
+    "@next/swc-win32-x64-msvc" "12.1.6"
 
 "node-releases@^2.0.6":
   "integrity" "sha512-PiVXnNuFm5+iYkLBNeq5211hvO38y63T0i2KKh2KnUs3RpzJ+JtODFjkD8yjLwnDkTYF1eKXheUwdssR+NRZdg=="
@@ -689,7 +694,7 @@
     "loose-envify" "^1.1.0"
     "scheduler" "^0.22.0"
 
-"react@^17.0.2 || ^18", "react@^17.0.2 || ^18.0.0-0", "react@^18.1.0", "react@>= 16", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@18.1.0":
+"react@^17.0.2 || ^18", "react@^17.0.2 || ^18.0.0-0", "react@^18.1.0", "react@>= 16", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16.13.1", "react@18.1.0":
   "integrity" "sha512-4oL8ivCz5ZEPyclFQXaNksK3adutVS8l2xzZU0cqEFrE9Sb7fC0EFK5uEk74wIreL1DERyjvsU915j1pcT2uEQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.1.0.tgz"
   "version" "18.1.0"
@@ -718,6 +723,13 @@
   "version" "3.6.0"
   dependencies:
     "picomatch" "^2.2.1"
+
+"recoil@^0.7.6":
+  "integrity" "sha512-hsBEw7jFdpBCY/tu2GweiyaqHKxVj6EqF2/SfrglbKvJHhpN57SANWvPW+gE90i3Awi+A5gssOd3u+vWlT+g7g=="
+  "resolved" "https://registry.npmjs.org/recoil/-/recoil-0.7.6.tgz"
+  "version" "0.7.6"
+  dependencies:
+    "hamt_plus" "1.0.2"
 
 "regenerator-runtime@^0.13.4":
   "integrity" "sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA=="
@@ -792,10 +804,10 @@
   dependencies:
     "safe-buffer" "~5.2.0"
 
-"styled-jsx@5.0.1":
-  "integrity" "sha512-+PIZ/6Uk40mphiQJJI1202b+/dYeTVd9ZnMPR80pgiWbjIwvN2zIp4r9et0BgqBuShh48I0gttPlAXA7WVvBxw=="
-  "resolved" "https://registry.npmjs.org/styled-jsx/-/styled-jsx-5.0.1.tgz"
-  "version" "5.0.1"
+"styled-jsx@5.0.2":
+  "integrity" "sha512-LqPQrbBh3egD57NBcHET4qcgshPks+yblyhPlH2GY8oaDgKs8SK4C3dBh3oSJjgzJ3G5t1SYEZGHkP+QEpX9EQ=="
+  "resolved" "https://registry.npmjs.org/styled-jsx/-/styled-jsx-5.0.2.tgz"
+  "version" "5.0.2"
 
 "superagent@^6.1.0":
   "integrity" "sha512-OUDHEssirmplo3F+1HWKUrUjvnQuA+nZI6i/JJBdXb5eq9IyEQwPyPpqND+SSsxf6TygpBEkUjISVRN4/VOpeg=="
