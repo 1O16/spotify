@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import useSpotify from "../hooks/useSpotify";
+import { signOut, useSession } from "next-auth/react";
+import { useRecoilState } from "recoil";
+import { playlistIdState, playlistState } from "../atoms/playlistAtom";
 import {
   UserCircleIcon,
   HomeIcon,
@@ -8,13 +11,13 @@ import {
   PlusCircleIcon,
 } from "@heroicons/react/24/outline";
 import { HeartIcon, BookmarkIcon } from "@heroicons/react/24/solid";
-import { signOut, useSession } from "next-auth/react";
 
 function Sidebar() {
   const spotifyApi = useSpotify();
   const { data: session, status } = useSession();
   const [playlists, setPlaylists] = useState([]);
-  const [playlistId, setPlaylistId] = useState(null);
+  const [playlistId, setPlaylistId] = useRecoilState(playlistIdState);
+  const [playlist, setPlaylist] = useRecoilState(playlistState);
 
   console.log("playlistId ", playlistId);
 
@@ -25,6 +28,8 @@ function Sidebar() {
       });
     }
   }, [session, spotifyApi]);
+
+  useEffect(() => {}, []);
 
   return (
     <div className="text-gray-500 bg-black p-5 text-sm border-r border-gray-900 overflow-y-scroll scrollbar-hide h-screen">
